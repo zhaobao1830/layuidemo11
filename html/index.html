@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="../layui/css/layui.css" media="all">
+    <style type="text/css">
+        .container{
+            background-color: #ebebeb;
+        }
+        body, html, input {
+            font-family: "Microsoft YaHei" ! important;
+            font-size: 14px;
+            color: #000;
+            font-style: normal;
+        }
+        .layui-container{
+            padding: 0;
+            background-color: #ffffff;
+        }
+        .header{
+            background-color: #ebebeb;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .header-container{
+            background-color: #ebebeb;
+        }
+        .logo-img img {
+            width: 100%;
+        }
+        .nav{
+            background-color: #ffffff;
+        }
+        .starNav{
+            padding: 0 !important;
+            background-color: #ffffff !important;
+        }
+        .starNav li a{
+            padding: 0 10PX !important;
+            height: 47px;
+            line-height: 47px;
+            color: #000 !important;
+        }
+        .carousel-con{
+            margin-top: 5px;
+        }
+        .rankStar{
+            margin-top: 50px;
+        }
+        .rankStar h2{
+            width: 150px;
+            margin: 0 auto;
+            font-size: 30px;
+            height: 30px;
+            line-height: 30px;
+            color: #999;
+            margin-bottom: 30px;
+        }
+        .rankStar-ui li{
+            height: 62px;
+            overflow: hidden;
+            padding: 14px 0;
+            border-bottom: dotted 1px #ccc;
+        }
+        .rankStar-ui li i{
+            width: 25px;
+            height: 25px;
+            display: inline-block;
+            text-align: center;
+            line-height: 25px;
+            margin: 19px 10px 0 10px;
+            float: left;
+            font-style: normal;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            font-weight: bold;
+            color: #a0a0a0;
+        }
+        .rankStar-ui li img{
+            width: 60px;
+            height: 60px;
+            border-radius: 60px;
+            float: left;
+            border: 2px solid #fff;
+            margin-right: 30px;
+        }
+        .rankStar-ui li h4 {
+            font-size: 16px;
+            line-height: 24px;
+            margin-top: 8px;
+            height: 24px;
+            overflow: hidden;
+            font-weight: normal;
+        }
+        .rankStar-ui ul li span {
+            font-size: 12px;
+            color: #999;
+            line-height: 24px;
+            height: 24px;
+        }
+        .rankStar h3{
+            text-align: center;
+        }
+        .newsStar{
+            margin-top: 50px;
+        }
+        .newsStar h2{
+            width: 150px;
+            margin: 0 auto;
+            font-size: 30px;
+            height: 30px;
+            line-height: 30px;
+            color: #999;
+            margin-bottom: 30px;
+        }
+        .newsStar-ui{
+            width: 100%;
+            overflow: hidden;
+        }
+        .newsStar-ui li {
+            display: flex;
+            height: 90px;
+            margin: 0 0 20px 0;
+            background-color: #fff;
+        }
+        .newsStar-ui li .newsStar-right{
+            margin: 0 20px;
+        }
+        .newsStar .title {
+            height: 40px;
+            line-height: 40px;
+            overflow: hidden;
+        }
+        .newsStar .intro {
+            height: 50px;
+            line-height: 24px;
+            overflow: hidden;
+            font-family: "Segoe UI","Tahoma","Arial";
+            font-size: 12px;
+            color: #828282;
+        }
+        .imageStar{
+            margin-top: 50px;
+        }
+        .imageStar h2{
+            width: 150px;
+            margin: 0 auto;
+            font-size: 30px;
+            height: 30px;
+            line-height: 30px;
+            color: #999;
+            margin-bottom: 30px;
+        }
+        .imageStar-ui li img{
+            margin: 0 10px;
+            width: 98%;
+            height: 200px;
+        }
+        .footer{
+            margin-top: 30px;
+            background-color: #666;
+            height: 110px;
+            text-align: center;
+            padding: 10px 0;
+        }
+        .footer p {
+            height: 30px;
+            line-height: 30px;
+            color: #ccc;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <div class="layui-container header-container">
+            <div class="layui-row">
+                <div class="layui-col-xs12 layui-col-sm4 layui-col-md4 logo-img">
+                    <img src="http://img.ylq.com/statics/images/star_logo.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--导航-->
+    <div class="nav">
+        <div class="layui-container">
+            <ul class="layui-nav starNav">
+                <li class="layui-nav-item layui-this"><a href="">首页</a></li>
+                <li class="layui-nav-item"><a href="">新闻</a></li>
+                <li class="layui-nav-item"><a href="">明星</a></li>
+                <li class="layui-nav-item"><a href="">图片</a></li>
+                <li class="layui-nav-item"><a href="">影视</a></li>
+                <li class="layui-nav-item"><a href="">专题</a></li>
+                <li class="layui-nav-item"><a href="">热点</a></li>
+                <li class="layui-nav-item"><a href="">百科</a></li>
+                <li class="layui-nav-item"><a href="">排行</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--轮播图-->
+    <div class="carousel-con">
+        <div class="layui-container">
+            <div class="layui-carousel" id="test1">
+                <div carousel-item>
+                    <div>条目1</div>
+                    <div>条目2</div>
+                    <div>条目3</div>
+                    <div>条目4</div>
+                    <div>条目5</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--明星人气榜-->
+    <div class="rankStar">
+        <h2>明星人气榜</h2>
+        <div class="layui-container">
+            <div class="layui-row">
+                <div class="layui-col-xs12 layui-col-sm6 layui-col-md3">
+                    <h3>内地明星</h3>
+                    <ul class="rankStar-ui">
+                        <li>
+                            <i  class="numColor">1</i>
+                            <a href="#" target="_blank" title="赵丽颖">
+                                <img src="http://img.ylq.com/2015/0827/thumb_120_120_20150827095747861.jpg" width="60" height="60" alt="赵丽颖">
+                            </a>
+                            <h4>
+                                <a href="#" target="_blank" title="赵丽颖">赵丽颖</a>
+                            </h4>
+                            <p>
+                                <span>人气：79480</span>
+                            </p>
+                        </li>
+                        <li>
+                            <i  class="numColor">1</i>
+                            <a href="#" target="_blank" title="赵丽颖">
+                                <img src="http://img.ylq.com/2015/0827/thumb_120_120_20150827095747861.jpg" width="60" height="60" alt="赵丽颖">
+                            </a>
+                            <h4>
+                                <a href="#" target="_blank" title="赵丽颖">赵丽颖</a>
+                            </h4>
+                            <p>
+                                <span>人气：79480</span>
+                            </p>
+                        </li>
+                        <li>
+                            <i  class="numColor">1</i>
+                            <a href="#" target="_blank" title="赵丽颖">
+                                <img src="http://img.ylq.com/2015/0827/thumb_120_120_20150827095747861.jpg" width="60" height="60" alt="赵丽颖">
+                            </a>
+                            <h4>
+                                <a href="#" target="_blank" title="赵丽颖">赵丽颖</a>
+                            </h4>
+                            <p>
+                                <span>人气：79480</span>
+                            </p>
+                        </li>
+                        <li>
+                            <i  class="numColor">1</i>
+                            <a href="#" target="_blank" title="赵丽颖">
+                                <img src="http://img.ylq.com/2015/0827/thumb_120_120_20150827095747861.jpg" width="60" height="60" alt="赵丽颖">
+                            </a>
+                            <h4>
+                                <a href="#" target="_blank" title="赵丽颖">赵丽颖</a>
+                            </h4>
+                            <p>
+                                <span>人气：79480</span>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="layui-col-xs12 layui-col-sm6 layui-col-md3">
+                    <h3>内地明星</h3>
+                    <ul class="rankStar-ui">
+                        <li>
+                            <i  class="numColor">1</i>
+                            <a href="#" target="_blank" title="赵丽颖">
+                                <img src="http://img.ylq.com/2015/0827/thumb_120_120_20150827095747861.jpg" width="60" height="60" alt="赵丽颖">
+                            </a>
+                            <h4>
+                                <a href="#" target="_blank" title="赵丽颖">赵丽颖</a>
+                            </h4>
+                            <p>
+                                <span>人气：79480</span>
+                            </p>
+                        </li>
+                        <li>
+                            <i  class="numColor">1</i>
+                            <a href="#" target="_blank" title="赵丽颖">
+                                <img src="http://img.ylq.com/2015/0827/thumb_120_120_20150827095747861.jpg" width="60" height="60" alt="赵丽颖">
+                            </a>
+                            <h4>
+                                <a href="#" target="_blank" title="赵丽颖">赵丽颖</a>
+                            </h4>
+                            <p>
+                                <span>人气：79480</span>
+                            </p>
+                        </li>
+                        <li>
+                            <i  class="numColor">1</i>
+                            <a href="#" target="_blank" title="赵丽颖">
+                                <img src="http://img.ylq.com/2015/0827/thumb_120_120_20150827095747861.jpg" width="60" height="60" alt="赵丽颖">
+                            </a>
+                            <h4>
+                                <a href="#" target="_blank" title="赵丽颖">赵丽颖</a>
+                            </h4>
+                            <p>
+                                <span>人气：79480</span>
+                            </p>
+                        </li>
+                        <li>
+                            <i  class="numColor">1</i>
+                            <a href="#" target="_blank" title="赵丽颖">
+                                <img src="http://img.ylq.com/2015/0827/thumb_120_120_20150827095747861.jpg" width="60" height="60" alt="赵丽颖">
+                            </a>
+                            <h4>
+                                <a href="#" target="_blank" title="赵丽颖">赵丽颖</a>
+                            </h4>
+                            <p>
+                                <span>人气：79480</span>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="layui-col-xs12 layui-col-sm6 layui-col-md3">
+                    <h3>内地明星</h3>
+                    <ul class="rankStar-ui">
+                        <li>
+                            <i  class="numColor">1</i>
+                            <a href="#" target="_blank" title="赵丽颖">
+                                <img src="http://img.ylq.com/2015/0827/thumb_120_120_20150827095747861.jpg" width="60" height="60" alt="赵丽颖">
+                            </a>
+                            <h4>
+                                <a href="#" target="_blank" title="赵丽颖">赵丽颖</a>
+                            </h4>
+                            <p>
+                                <span>人气：79480</span>
+                            </p>
+                        </li>
+                        <li>
+                            <i  class="numColor">1</i>
+                            <a href="#" target="_blank" title="赵丽颖">
+                                <img src="http://img.ylq.com/2015/0827/thumb_120_120_20150827095747861.jpg" width="60" height="60" alt="赵丽颖">
+                            </a>
+                            <h4>
+                                <a href="#" target="_blank" title="赵丽颖">赵丽颖</a>
+                            </h4>
+                            <p>
+                                <span>人气：79480</span>
+                            </p>
+                        </li>
+                        <li>
+                            <i  class="numColor">1</i>
+                            <a href="#" target="_blank" title="赵丽颖">
+                                <img src="http://img.ylq.com/2015/0827/thumb_120_120_20150827095747861.jpg" width="60" height="60" alt="赵丽颖">
+                            </a>
+                            <h4>
+                                <a href="#" target="_blank" title="赵丽颖">赵丽颖</a>
+                            </h4>
+                            <p>
+                                <span>人气：79480</span>
+                            </p>
+                        </li>
+                        <li>
+                            <i  class="numColor">1</i>
+                            <a href="#" target="_blank" title="赵丽颖">
+                                <img src="http://img.ylq.com/2015/0827/thumb_120_120_20150827095747861.jpg" width="60" height="60" alt="赵丽颖">
+                            </a>
+                            <h4>
+                                <a href="#" target="_blank" title="赵丽颖">赵丽颖</a>
+                            </h4>
+                            <p>
+                                <span>人气：79480</span>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="layui-col-xs12 layui-col-sm6 layui-col-md3">
+                    <h3>内地明星</h3>
+                    <ul class="rankStar-ui">
+                        <li>
+                            <i  class="numColor">1</i>
+                            <a href="#" target="_blank" title="赵丽颖">
+                                <img src="http://img.ylq.com/2015/0827/thumb_120_120_20150827095747861.jpg" width="60" height="60" alt="赵丽颖">
+                            </a>
+                            <h4>
+                                <a href="#" target="_blank" title="赵丽颖">赵丽颖</a>
+                            </h4>
+                            <p>
+                                <span>人气：79480</span>
+                            </p>
+                        </li>
+                        <li>
+                            <i  class="numColor">1</i>
+                            <a href="#" target="_blank" title="赵丽颖">
+                                <img src="http://img.ylq.com/2015/0827/thumb_120_120_20150827095747861.jpg" width="60" height="60" alt="赵丽颖">
+                            </a>
+                            <h4>
+                                <a href="#" target="_blank" title="赵丽颖">赵丽颖</a>
+                            </h4>
+                            <p>
+                                <span>人气：79480</span>
+                            </p>
+                        </li>
+                        <li>
+                            <i  class="numColor">1</i>
+                            <a href="#" target="_blank" title="赵丽颖">
+                                <img src="http://img.ylq.com/2015/0827/thumb_120_120_20150827095747861.jpg" width="60" height="60" alt="赵丽颖">
+                            </a>
+                            <h4>
+                                <a href="#" target="_blank" title="赵丽颖">赵丽颖</a>
+                            </h4>
+                            <p>
+                                <span>人气：79480</span>
+                            </p>
+                        </li>
+                        <li>
+                            <i  class="numColor">1</i>
+                            <a href="#" target="_blank" title="赵丽颖">
+                                <img src="http://img.ylq.com/2015/0827/thumb_120_120_20150827095747861.jpg" width="60" height="60" alt="赵丽颖">
+                            </a>
+                            <h4>
+                                <a href="#" target="_blank" title="赵丽颖">赵丽颖</a>
+                            </h4>
+                            <p>
+                                <span>人气：79480</span>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--明星资讯-->
+    <div class="newsStar">
+        <h2>明星资讯</h2>
+        <div class="layui-container">
+            <ul class="layui-row newsStar-ui">
+                <li class="layui-col-xs12 layui-col-sm6 layui-col-md6">
+                    <div class="newsStar-left">
+                        <a href="#" target="_blank">
+                            <img src="http://img.ylq.com/2018/0916/thumb_240_180_20180916043637681.jpg" width="120" height="90">
+                        </a>
+                    </div>
+                    <div class="newsStar-right">
+                        <div class="title">
+                            <a href="#" target="_blank">佟丽娅将拍法国旅游宣传片 担任旅游大使传递浪漫情怀</a>
+                        </div>
+                        <div class="intro">近日，法国国家旅游发展署在巴黎举行法国旅游宣传片开机发布会，宣布将由中国演员佟丽娅、翟天临担任法国旅游推广大使，共同演绎浪漫的</div>
+                    </div>
+                </li>
+                <li class="layui-col-xs12 layui-col-sm6 layui-col-md6">
+                    <div class="newsStar-left">
+                        <a href="#" target="_blank">
+                            <img src="http://img.ylq.com/2018/0916/thumb_240_180_20180916043637681.jpg" width="120" height="90">
+                        </a>
+                    </div>
+                    <div class="newsStar-right">
+                        <div class="title">
+                            <a href="#" target="_blank">佟丽娅将拍法国旅游宣传片 担任旅游大使传递浪漫情怀</a>
+                        </div>
+                        <div class="intro">近日，法国国家旅游发展署在巴黎举行法国旅游宣传片开机发布会，宣布将由中国演员佟丽娅、翟天临担任法国旅游推广大使，共同演绎浪漫的</div>
+                    </div>
+                </li>
+                <li class="layui-col-xs12 layui-col-sm6 layui-col-md6">
+                    <div class="newsStar-left">
+                        <a href="#" target="_blank">
+                            <img src="http://img.ylq.com/2018/0916/thumb_240_180_20180916043637681.jpg" width="120" height="90">
+                        </a>
+                    </div>
+                    <div class="newsStar-right">
+                        <div class="title">
+                            <a href="#" target="_blank">佟丽娅将拍法国旅游宣传片 担任旅游大使传递浪漫情怀</a>
+                        </div>
+                        <div class="intro">近日，法国国家旅游发展署在巴黎举行法国旅游宣传片开机发布会，宣布将由中国演员佟丽娅、翟天临担任法国旅游推广大使，共同演绎浪漫的</div>
+                    </div>
+                </li>
+                <li class="layui-col-xs12 layui-col-sm6 layui-col-md6">
+                    <div class="newsStar-left">
+                        <a href="#" target="_blank">
+                            <img src="http://img.ylq.com/2018/0916/thumb_240_180_20180916043637681.jpg" width="120" height="90">
+                        </a>
+                    </div>
+                    <div class="newsStar-right">
+                        <div class="title">
+                            <a href="#" target="_blank">佟丽娅将拍法国旅游宣传片 担任旅游大使传递浪漫情怀</a>
+                        </div>
+                        <div class="intro">近日，法国国家旅游发展署在巴黎举行法国旅游宣传片开机发布会，宣布将由中国演员佟丽娅、翟天临担任法国旅游推广大使，共同演绎浪漫的</div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--明星图片-->
+    <div class="imageStar">
+        <h2>明星图片</h2>
+        <div class="layui-container">
+            <ul class="layui-row imageStar-ui">
+                <li class="layui-col-xs6 layui-col-sm3 layui-col-md3">
+                    <a href="#" target="_blank">
+                        <img src="http://img.ylq.com/2018/0516/thumb_560_560_20180516042445471.jpg">
+                    </a>
+                </li>
+                <li class="layui-col-xs6 layui-col-sm3 layui-col-md3">
+                    <a href="#" target="_blank">
+                        <img src="http://img.ylq.com/2018/0516/thumb_560_560_20180516042445471.jpg">
+                    </a>
+                </li>
+                <li class="layui-col-xs6 layui-col-sm3 layui-col-md3">
+                    <a href="#" target="_blank">
+                        <img src="http://img.ylq.com/2018/0516/thumb_560_560_20180516042445471.jpg">
+                    </a>
+                </li>
+                <li class="layui-col-xs6 layui-col-sm3 layui-col-md3">
+                    <a href="#" target="_blank">
+                        <img src="http://img.ylq.com/2018/0516/thumb_560_560_20180516042445471.jpg">
+                    </a>
+                </li>
+                <li class="layui-col-xs6 layui-col-sm3 layui-col-md3">
+                    <a href="#" target="_blank">
+                        <img src="http://img.ylq.com/2018/0516/thumb_560_560_20180516042445471.jpg">
+                    </a>
+                </li>
+                <li class="layui-col-xs6 layui-col-sm3 layui-col-md3">
+                    <a href="#" target="_blank">
+                        <img src="http://img.ylq.com/2018/0516/thumb_560_560_20180516042445471.jpg">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--底部-->
+    <div class="footer">
+        <p>阿里巴巴集团|淘宝网|天猫|聚划算|全球速卖通|阿里巴巴国际交易市场|1688|阿里妈妈|飞猪|阿里云计算|AliOS|支付宝|支付宝商家平台|阿里星球|UC|天猫新零售|阿里聚安全|达摩院|友盟</p>
+        <p>阿里钉钉Ⓒ版权公告 2014-2019 钉钉（中国）信息技术有限公司和／或其关联公司版权所有</p>
+        <p>浙ICP备18037475号 跨地区增值电信业务证号：B2-20184300 浙江省增值电信业务经营许可证：浙B2-20180981</p>
+        <p>浙公网安备 33011002010140号 </p>
+    </div>
+</div>
+    <script type="application/javascript" src="../layui/layui.js"></script>
+    <script>
+        layui.use('carousel', function(){
+            var carousel = layui.carousel;
+            //建造实例
+            carousel.render({
+                elem: '#test1'
+                ,width: '100%' //设置容器宽度
+                ,arrow: 'always' //始终显示箭头
+                //,anim: 'updown' //切换动画方式
+            });
+        });
+    </script>
+</body>
+</html>
