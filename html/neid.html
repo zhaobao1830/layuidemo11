@@ -8,6 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" href="../layui/css/layui.css" media="all">
     <style type="text/css">
+        .container{
+            background-color: #ebebeb;
+        }
         body, html, input {
             font-family: "Microsoft YaHei" ! important;
             font-size: 14px;
@@ -17,12 +20,324 @@
         .layui-container{
             padding: 0;
         }
+
+        /*筛选*/
+        .filter i{
+            width: 12px;
+            height: 12px;
+            display: inline-block;
+            float: left;
+            background: url(http://img.ylq.com/statics/images/starIcon.png) 0px -260px no-repeat;
+            margin: 4px 5px 0px 0px;
+        }
+        .filter-container{
+            background-color: #ffffff;
+        }
+        .filter-container ul{
+            padding: 10px;
+        }
+        .filter-container ul li{
+            line-height: 40px;
+            border-bottom: 1px dotted rgb(204, 204, 204);
+            overflow: hidden;
+        }
+        .filter-container ul li dl dt {
+            float: left;
+            width: 42px;
+            color: rgb(153, 153, 153);
+        }
+        .filter-container ul li dl dd {
+            float: left;
+            display: inline-block;
+            margin: 0px 5px;
+        }
+
+        .fContent{
+            margin-top: 20px;
+        }
+
+        .fContent ul{
+            overflow: hidden;
+        }
+        .fContent ul li{
+            float: left;
+            position: relative;
+        }
+        .fContent ul li img{
+            width: 100%;
+            height: auto;
+        }
+        .fContent ul li p{
+            position: absolute;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #ffffff;
+            width: 100px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
     </style>
 </head>
 <body>
 <div class="container">
-
+    <!--筛选-->
+    <div class="filter">
+        <div class="layui-container">
+            <div class="breadcrumb">
+                <i></i>
+                <span class="layui-breadcrumb" lay-separator=">">
+                  <a href="">首页</a>
+                  <a href="">档案</a>
+                  <a href="">内地明星</a>
+                  <a><cite>筛选</cite></a>
+                </span>
+            </div>
+            <div class="filter-container">
+                <ul>
+                    <li>
+                        <dl>
+                            <dt>地区：</dt>
+                            <dd>
+                                <a href="#">全部</a>
+                            </dd>
+                            <dd>
+                                <a href="#">全部</a>
+                            </dd>
+                            <dd>
+                                <a href="#">全部</a>
+                            </dd>
+                            <dd>
+                                <a href="#">全部</a>
+                            </dd>
+                            <dd>
+                                <a href="#">全部</a>
+                            </dd>
+                            <dd>
+                                <a href="#">全部</a>
+                            </dd>
+                            <dd>
+                                <a href="#">全部</a>
+                            </dd>
+                            <dd>
+                                <a href="#">全部</a>
+                            </dd>
+                            <dd>
+                                <a href="#">全部</a>
+                            </dd>
+                            <dd>
+                                <a href="#">全部</a>
+                            </dd>
+                            <dd>
+                                <a href="#">全部</a>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>地区：</dt>
+                            <dd>
+                                <a href="#">全部</a>
+                            </dd>
+                            <dd>
+                                <a href="#">全部</a>
+                            </dd>
+                            <dd>
+                                <a href="#">全部</a>
+                            </dd>
+                            <dd>
+                                <a href="#">全部</a>
+                            </dd>
+                            <dd>
+                                <a href="#">全部</a>
+                            </dd>
+                            <dd>
+                                <a href="#">全部</a>
+                            </dd>
+                            <dd>
+                                <a href="#">全部</a>
+                            </dd>
+                            <dd>
+                                <a href="#">全部</a>
+                            </dd>
+                            <dd>
+                                <a href="#">全部</a>
+                            </dd>
+                            <dd>
+                                <a href="#">全部</a>
+                            </dd>
+                            <dd>
+                                <a href="#">全部</a>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>地区：</dt>
+                            <dd>
+                                <a href="#">全部</a>
+                            </dd>
+                            <dd>
+                                <a href="#">全部</a>
+                            </dd>
+                            <dd>
+                                <a href="#">全部</a>
+                            </dd>
+                            <dd>
+                                <a href="#">全部</a>
+                            </dd>
+                            <dd>
+                                <a href="#">全部</a>
+                            </dd>
+                            <dd>
+                                <a href="#">全部</a>
+                            </dd>
+                            <dd>
+                                <a href="#">全部</a>
+                            </dd>
+                            <dd>
+                                <a href="#">全部</a>
+                            </dd>
+                            <dd>
+                                <a href="#">全部</a>
+                            </dd>
+                            <dd>
+                                <a href="#">全部</a>
+                            </dd>
+                            <dd>
+                                <a href="#">全部</a>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>地区：</dt>
+                            <dd>
+                                <a href="#">全部</a>
+                            </dd>
+                            <dd>
+                                <a href="#">全部</a>
+                            </dd>
+                            <dd>
+                                <a href="#">全部</a>
+                            </dd>
+                            <dd>
+                                <a href="#">全部</a>
+                            </dd>
+                            <dd>
+                                <a href="#">全部</a>
+                            </dd>
+                            <dd>
+                                <a href="#">全部</a>
+                            </dd>
+                            <dd>
+                                <a href="#">全部</a>
+                            </dd>
+                            <dd>
+                                <a href="#">全部</a>
+                            </dd>
+                            <dd>
+                                <a href="#">全部</a>
+                            </dd>
+                            <dd>
+                                <a href="#">全部</a>
+                            </dd>
+                            <dd>
+                                <a href="#">全部</a>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>地区：</dt>
+                            <dd>
+                                <a href="#">全部</a>
+                            </dd>
+                            <dd>
+                                <a href="#">全部</a>
+                            </dd>
+                            <dd>
+                                <a href="#">全部</a>
+                            </dd>
+                            <dd>
+                                <a href="#">全部</a>
+                            </dd>
+                            <dd>
+                                <a href="#">全部</a>
+                            </dd>
+                            <dd>
+                                <a href="#">全部</a>
+                            </dd>
+                            <dd>
+                                <a href="#">全部</a>
+                            </dd>
+                            <dd>
+                                <a href="#">全部</a>
+                            </dd>
+                            <dd>
+                                <a href="#">全部</a>
+                            </dd>
+                            <dd>
+                                <a href="#">全部</a>
+                            </dd>
+                            <dd>
+                                <a href="#">全部</a>
+                            </dd>
+                        </dl>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="fContent">
+        <div class="layui-container">
+            <ul class="layui-row layui-col-space10">
+                <li class="layui-col-xs4 layui-col-sm2 layui-col-md2">
+                    <a href="#">
+                        <img src="http://img.ylq.com/2015/0827/thumb_120_120_20150827095747861.jpg" alt="赵丽颖">
+                    </a>
+                    <p>赵丽颖</p>
+                </li>
+                <li class="layui-col-xs4 layui-col-sm2 layui-col-md2">
+                    <a href="#">
+                        <img src="http://img.ylq.com/2015/0827/thumb_120_120_20150827095747861.jpg" alt="赵丽颖">
+                    </a>
+                    <p>赵丽颖</p>
+                </li>
+                <li class="layui-col-xs4 layui-col-sm2 layui-col-md2">
+                    <a href="#">
+                        <img src="http://img.ylq.com/2015/0827/thumb_120_120_20150827095747861.jpg" alt="赵丽颖">
+                    </a>
+                    <p>赵丽颖</p>
+                </li>
+                <li class="layui-col-xs4 layui-col-sm2 layui-col-md2">
+                    <a href="#">
+                        <img src="http://img.ylq.com/2015/0827/thumb_120_120_20150827095747861.jpg" alt="赵丽颖">
+                    </a>
+                    <p>赵丽颖</p>
+                </li>
+                <li class="layui-col-xs4 layui-col-sm2 layui-col-md2">
+                    <a href="#">
+                        <img src="http://img.ylq.com/2015/0827/thumb_120_120_20150827095747861.jpg" alt="赵丽颖">
+                    </a>
+                    <p>赵丽颖</p>
+                </li>
+                <li class="layui-col-xs4 layui-col-sm2 layui-col-md2">
+                    <a href="#">
+                        <img src="http://img.ylq.com/2015/0827/thumb_120_120_20150827095747861.jpg" alt="赵丽颖">
+                    </a>
+                    <p>赵丽颖</p>
+                </li>
+            </ul>
+        </div>
+    </div>
 </div>
     <script type="application/javascript" src="../layui/layui.js"></script>
+    <script>
+        //注意：导航 依赖 element 模块，否则无法进行功能性操作
+        layui.use('element', function(){
+            var element = layui.element;
+        });
+    </script>
 </body>
 </html>
